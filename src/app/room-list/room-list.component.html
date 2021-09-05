@@ -1,0 +1,31 @@
+< div  class = " panel panel-primary " >
+    < div  class = " panel-header " >
+      < h2 > Lista de salas </ h2 >
+    </ div >
+    < div  class = " panel-body " >
+      < table  class = " table table-stripes " >
+        < thead >
+          < tr >
+            < th > nome </ th >
+            < th > data </ th >
+            < th > startHour </ th >
+            < th > endHour </ th >
+            < th > Ações </ th >
+          </ tr >
+        </ thead >
+        < tbody >
+          < tr  * ngFor = " deixar espaço dos quartos | async " >
+            < td > {{room.name}} </ td >
+            < td > {{room.date}} </ td >
+            < td > {{room.startHour}} </ td >
+            < td > {{room.endHour}} </ td >
+            < td > < button  (click) = " deleteRoom (room.id) " class = " btn btn-danger " > Excluir </ button >
+              < button  (click) = " updateRoom (room.id) " class = " btn btn-info " style = " margin-left: 10px " > Atualizar </ button >
+                < button  (click) = " roomDetails (room.id) " class = " btn btn-info " style = " margin-left: 10px " > Detalhes </ button >
+            </ td >
+          </ tr >
+        </ tbody >
+      </ mesa >
+    </ div >
+  </ div >
+  
